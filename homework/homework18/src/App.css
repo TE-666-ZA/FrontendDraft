@@ -41,3 +41,10 @@
     transform: rotate(360deg);
   }
 }
+
+@media (width < 450vh) {
+  .img {
+    width: 50vh;
+    height: 80vh;
+  }
+}

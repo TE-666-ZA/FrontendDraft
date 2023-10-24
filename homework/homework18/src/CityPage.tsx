@@ -20,6 +20,7 @@ function changeCity() {
     }
 }
 
+
     function switchCityMadrid() {
         setCity("This is Madrid!");
         setCityPicture("https://cdn.tripster.ru/thumbs2/f95c62d0-d1de-11ec-ac17-dedfd18f3562.800x600.jpeg");
