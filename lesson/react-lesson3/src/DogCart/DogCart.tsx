@@ -13,7 +13,6 @@ const DogCart: FC = () => {
     return (
         <div>
             <h1>DogCart</h1>
-            <img src={} alt=""/>
         </div>
     )
 }
