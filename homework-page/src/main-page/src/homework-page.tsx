@@ -10,9 +10,9 @@ function HomeworkPage() {
     }
     return (
         <div className="container">
-            <header className="title">
+            <header className="header">
                 <h1>   <div className='toggleDiv'>  <Toggle toggled={toggled} onClick={hundleClick}/> </div>
-                    Homepage</h1>
+                    Homework page</h1>
             </header>
             <nav className="navbar">
 
