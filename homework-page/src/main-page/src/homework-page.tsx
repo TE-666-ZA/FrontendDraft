@@ -1,23 +1,28 @@
-import './homework-page.css';
-import React from 'react';
-import Toggle from "../toggle/toggle";
+import styles from './homework-page.module.css';
+import React, {useState} from 'react';
+import ThemeSwitcher from "../themeSwitcher/ThemeSwitcher";
+
 
 
 function HomeworkPage() {
-    const [toggled, setToggled] = React.useState(false);
-    const hundleClick = () => {
-        setToggled((s) => !s);
+
+    const [toggled, setToggled] = useState(true)
+        const handleClick = (switchedValue: boolean) => {
+        setToggled(switchedValue);
+
     }
     return (
-        <div className="container">
-            <header className="header">
-                <h1>   <div className='toggleDiv'>  <Toggle toggled={toggled} onClick={hundleClick}/> </div>
-                    Homework page</h1>
+        <div className={`${styles.container} ${toggled && styles.night}`}>
+            <header className={styles.header}>
+                <h1>
+                    <div className={styles.toggleDiv}>
+                       < ThemeSwitcher onClick={handleClick} />
+                    </div>
+                    <span>Homework page</span>
+                </h1>
             </header>
-            <nav className="navbar">
-
+            <nav className={styles.navbar}>
             </nav>
-
         </div>
     );
 }
