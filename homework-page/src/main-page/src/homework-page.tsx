@@ -11,10 +11,11 @@ function HomeworkPage() {
     return (
         <div className="container">
             <header className="title">
-                <h1>Homepage</h1>
+                <h1>   <div className='toggleDiv'>  <Toggle toggled={toggled} onClick={hundleClick}/> </div>
+                    Homepage</h1>
             </header>
             <nav className="navbar">
-                <Toggle toggled={toggled} onClick={hundleClick}/>
+
             </nav>
 
         </div>
