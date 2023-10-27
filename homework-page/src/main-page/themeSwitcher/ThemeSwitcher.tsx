@@ -5,12 +5,11 @@ interface IThemeSwitcher {
     onClick: (value: boolean) => void;
 }
     const ThemeSwitcher = ({onClick}: IThemeSwitcher): JSX.Element => {
-        const [toggled, setToggled] = useState(true);
+        const [toggled, setToggled] = useState(false);
         const handleSwitch = () => {
             setToggled(prevValue => !prevValue)
             onClick(toggled)
         }
-
 
         return (
             <div onClick={handleSwitch} className={`${styles.toggle} ${toggled && styles.night}`}>

@@ -32,7 +32,10 @@ body{
     position: absolute;
 }
 
-.night .container {
-    background-color: black;
+.container.night .body{
+    background-color: #282c34;
 }
 
+.container.night .header{
+    background-color: #282c34;
+}
