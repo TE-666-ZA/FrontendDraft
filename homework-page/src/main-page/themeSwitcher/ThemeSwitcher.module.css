@@ -34,15 +34,15 @@
 
 .sunMoon > .crater:first-child{
     height: 15px;
-    width: 20px;
+    width: 10px;
     top:10%;
     left: 7%;
-    transform: rotate(-42deg);
+    transform: rotate(-150deg);
 }
 
 .sunMoon > .crater:last-child{
     height: 12px;
-    width: 20px;
+    width: 15px;
     top: 50%;
     right: 0%;
     transform: rotate(120deg);

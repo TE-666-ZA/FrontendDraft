@@ -6,14 +6,14 @@ import ThemeSwitcher from "../themeSwitcher/ThemeSwitcher";
 
 function HomeworkPage() {
 
-    const [toggled, setToggled] = useState(false)
+    const [toggled, setToggled] = useState(false);
         const handleClick = (switchedValue: boolean) => {
         setToggled(switchedValue);
-
     }
 
+
     return (
-        <div className={`${styles.container} ${toggled && styles.night}`}>
+        <div className={`${styles.container} ${!toggled && styles.night}`}>
             <header className={styles.header}>
                 <h1>
                     <div className={styles.toggleDiv}>

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './ThemeSwitcher.module.css';
 
 interface IThemeSwitcher {
@@ -10,6 +10,10 @@ interface IThemeSwitcher {
             setToggled(prevValue => !prevValue)
             onClick(toggled)
         }
+
+        useEffect(() => {
+            document.body.style.backgroundColor = toggled ? '#282c34' : 'white'
+        })
 
         return (
             <div onClick={handleSwitch} className={`${styles.toggle} ${toggled && styles.night}`}>
