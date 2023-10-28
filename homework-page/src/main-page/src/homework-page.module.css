@@ -32,10 +32,16 @@ body{
     position: absolute;
 }
 
-.container.night .body{
+.container.night {
     background-color: #282c34;
+    color: #e7e5e5;
+
 }
 
-.container.night .header{
-    background-color: #282c34;
+.container.night .navbar {
+    background-color: purple;
+}
+
+.container.night .header {
+    background-color: purple;
 }
