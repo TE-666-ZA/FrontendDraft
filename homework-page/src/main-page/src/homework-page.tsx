@@ -6,7 +6,7 @@ import ThemeSwitcher from "../themeSwitcher/ThemeSwitcher";
 
 function HomeworkPage() {
 
-    const [toggled, setToggled] = useState(false);
+    const [toggled, setToggled] = useState(true);
         const handleClick = (switchedValue: boolean) => {
         setToggled(switchedValue);
     }
@@ -23,6 +23,8 @@ function HomeworkPage() {
                 </h1>
             </header>
             <nav className={styles.navbar}>
+              navigation
+
             </nav>
         </div>
     );

@@ -40,6 +40,7 @@ body{
 
 .container.night .navbar {
     background-color: purple;
+    color: #282c34;
 }
 
 .container.night .header {
